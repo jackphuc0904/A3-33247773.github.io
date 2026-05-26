@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Customised for FIT1050 Assignment 3.
+-->
+<html lang="en">
+	<head>
+		<title>Crescent Hoops Club</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Crescent Hoops Club is a fictional student basketball club homepage for training sessions, social shootarounds, and campus basketball events." />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Navigation -->
+			<nav id="site-nav">
+				<a class="site-logo scrolly" href="#header">
+					<span class="icon solid fa-basketball-ball"></span>
+					<span>Crescent Hoops Club</span>
+				</a>
+				<ul>
+					<li><a class="scrolly" href="#one">About</a></li>
+					<li><a class="scrolly" href="#two">Activities</a></li>
+					<li><a class="scrolly" href="#three">Sessions</a></li>
+					<li><a class="scrolly" href="#schedule">Schedule</a></li>
+					<li><a class="scrolly" href="#four">Join</a></li>
+				</ul>
+			</nav>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner hero-layout">
+					<div class="hero-copy">
+						<p class="eyebrow">Fictional student club homepage</p>
+						<h1>Find your next campus basketball run.</h1>
+						<p>Crescent Hoops Club runs social shootarounds, beginner training, friendly games, and casual events for students who want an easy way to meet people through basketball.</p>
+						<ul class="actions special hero-actions">
+							<li><a href="#three" class="button primary scrolly">View Sessions</a></li>
+							<li><a href="#four" class="button scrolly">Join the Club</a></li>
+						</ul>
+					</div>
+					<div class="hero-image-wrap">
+						<img src="images/personal-basketball-team-photo.JPG" alt="Photo of a basketball court with a hoop and basketball" />
+					</div>
+				</div>
+			</header>
+
+		<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>A simple club for students who enjoy basketball and social sport.</h2>
+							</header>
+							<p>Crescent Hoops Club is built around low-pressure basketball activities. Students can come alone, bring friends, join a casual shootaround, and meet new people without needing competitive experience.</p>
+							<p>The homepage focuses on quick decisions: what the club is, what sessions are available, when they happen, and how a student can join.</p>
+						</div>
+						<div class="col-6 col-12-medium imp-medium">
+							<span class="image fit framed-image"><img src="images/personal-social-event-photo.JPG" alt="Photo of students sitting near a basketball court after training" /></span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main style2">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<ul class="major-icons activity-icons">
+								<li><span class="icon solid style1 major fa-basketball-ball"></span></li>
+								<li><span class="icon solid style2 major fa-running"></span></li>
+								<li><span class="icon solid style3 major fa-users"></span></li>
+								<li><span class="icon solid style4 major fa-star"></span></li>
+								<li><span class="icon solid style5 major fa-tint"></span></li>
+								<li><span class="icon solid style6 major fa-calendar"></span></li>
+							</ul>
+						</div>
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>What students can do with the club</h2>
+							</header>
+							<ul class="feature-list">
+								<li>
+									<h3>Join weekly basketball sessions</h3>
+									<p>Each session has a clear activity type, court location, and start time so students can decide quickly.</p>
+								</li>
+								<li>
+									<h3>Practise simple skills</h3>
+									<p>Members can join beginner-friendly drills, shooting practice, and short warmups without needing team experience.</p>
+								</li>
+								<li>
+									<h3>Join social games</h3>
+									<p>Members can join friendly half-court games and suggest future session ideas, making the club feel student-led rather than formal.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Upcoming basketball sessions</h2>
+					</header>
+					<p>Filter the list to find the type of basketball session you are most likely to attend.</p>
+
+					<div id="filter-buttons" class="filter-panel">
+						<button type="button" class="filter-button is-active" onclick="filterSelection('all')">All</button>
+						<button type="button" class="filter-button" onclick="filterSelection('training')">Training</button>
+						<button type="button" class="filter-button" onclick="filterSelection('game')">Game</button>
+						<button type="button" class="filter-button" onclick="filterSelection('social')">Social</button>
+					</div>
+
+					<p id="filter-status" class="filter-status">Showing all 3 upcoming sessions.</p>
+
+					<ul class="card-row">
+						<li class="session-card training">
+							<img src="images/personal-shooting-practice-photo.JPG" alt="Photo of a basketball court training session" />
+							<p class="event-tag">Training session</p>
+							<h3>Shooting Skills Session</h3>
+							<p>Friday, 6:30pm. A relaxed shooting and layup practice session.</p>
+						</li>
+
+						<li class="session-card game">
+							<img src="images/personal-event-game-photo.JPG" alt="Photo of a friendly basketball game" />
+							<p class="event-tag">Friendly game</p>
+							<h3>Half-Court Run</h3>
+							<p>Wednesday, 5:00pm. A beginner-friendly half-court game with rotating teams.</p>
+						</li>
+
+						<li class="session-card social">
+							<img src="images/personal-social-shootround-photo.JPG" alt="Photo of a basketball and team chat for a social event" />
+							<p class="event-tag">Social event</p>
+							<h3>Social Shootaround</h3>
+							<p>Monday, 4:00pm. Shoot casually, meet members, and choose future activities.</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Schedule -->
+			<section id="schedule" class="main style2 special">
+				<div class="container">
+					<header class="major">
+						<h2>Weekly schedule</h2>
+					</header>
+					<p>Students can use this section to quickly check which basketball session fits their week.</p>
+					<ul class="schedule-list">
+						<li>
+							<h3>Monday</h3>
+							<p>Social Shootaround</p>
+							<p>4:00pm · Best for new members and casual socialising.</p>
+						</li>
+						<li>
+							<h3>Wednesday</h3>
+							<p>Half-Court Run</p>
+							<p>5:00pm · Best for casual games and first-time visitors.</p>
+						</li>
+						<li>
+							<h3>Friday</h3>
+							<p>Shooting Skills Session</p>
+							<p>6:30pm · Best for students wanting a relaxed end-of-week session.</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Four -->
+			<section id="four" class="main style1 special join-section">
+				<div class="container">
+					<header class="major">
+						<h2>Join before the next session</h2>
+					</header>
+					<p>Membership is free for this club. Register your interest now and receive session reminders from us.</p>
+					<ul class="actions special">
+						<li><a href="mailto:A3_crescenthoops@example.com" class="button wide primary">Email to Join</a></li>
+						<li><a href="#three" class="button wide scrolly">Browse Sessions</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="mailto:A3_crescenthoops@example.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<p class="footer-text">Crescent Hoops Club<br />Basketball club · A3_crescenthoops@example.com</p>
+				<ul class="copyright">
+					<li>&copy; Crescent Hoops Club</li><li>Template: <a href="https://html5up.net/photon">Photon by HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/event-filter.js"></script>
+
+	</body>
+</html>
